@@ -55,7 +55,7 @@ import StageData;
 import FunkinLua;
 import DialogueBoxPsych;
 
-#if desktop
+#if sys
 import sys.FileSystem;
 #end
 
