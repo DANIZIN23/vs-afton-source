@@ -22,7 +22,7 @@ class Paths
 	inline public static var SOUND_EXT = #if web "mp3" #else "ogg" #end;
 	inline public static var VIDEO_EXT = "mp4";
 
-	#if MODS_ALLOWED
+	#if sys
 	#if (haxe >= "4.0.0")
 	public static var ignoreModFolders:Map<String, Bool> = new Map();
 	public static var customImagesLoaded:Map<String, Bool> = new Map();
@@ -35,7 +35,7 @@ class Paths
 	#end
 
 	public static function destroyLoadedImages(ignoreCheck:Bool = false) {
-		#if MODS_ALLOWED
+		#if sys
 		if(!ignoreCheck && ClientPrefs.imagesPersist) return; //If there's 20+ images loaded, do a cleanup just for preventing a crash
 
 		for (key in customImagesLoaded.keys()) {
@@ -54,7 +54,7 @@ class Paths
 	static var currentLevel:String;
 	static public function getModFolders()
 	{
-		#if MODS_ALLOWED
+		#if sys
 		ignoreModFolders.set('characters', true);
 		ignoreModFolders.set('custom_events', true);
 		ignoreModFolders.set('custom_notetypes', true);
