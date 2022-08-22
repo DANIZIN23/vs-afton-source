@@ -240,6 +240,10 @@ class FreeplayState extends MusicBeatState
 		changeSelection(0);
 		updateSongImage();
 
+		#if android
+	        addVirtualPad(LEFT_FULL, A_B_X_Y);
+                #end
+			
 		super.create();
 	}
 
@@ -361,7 +365,7 @@ class FreeplayState extends MusicBeatState
 		{
 			var songLowercase:String = Paths.formatToSongPath(songs[curSelected].songName);
 			var poop:String = Highscore.formatSong(songLowercase, curDifficulty);
-			#if MODS_ALLOWED
+			#if windows
 			if(!sys.FileSystem.exists(Paths.modsJson(songLowercase + '/' + poop)) && !sys.FileSystem.exists(Paths.json(songLowercase + '/' + poop))) {
 			#else
 			if(!OpenFlAssets.exists(Paths.json(songLowercase + '/' + poop))) {
