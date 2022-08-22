@@ -14,7 +14,7 @@ import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.FlxGame;
-Add AndroidControls
+AddAndroidControls
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxState;
@@ -37,7 +37,7 @@ import flixel.math.FlxRect;
 import flixel.system.FlxSound;
 
 
-import flixel.text.FlxText;
+import flixel.text.FlxText
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.ui.FlxBar;
