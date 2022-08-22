@@ -1,6 +1,6 @@
 package;
 
-#if MODS_ALLOWED
+#if desktop
 import sys.io.File;
 import sys.FileSystem;
 #else
@@ -64,7 +64,7 @@ class StageData {
 		var rawJson:String = null;
 		var path:String = Paths.getPreloadPath('stages/' + stage + '.json');
 
-		#if MODS_ALLOWED
+		#if desktop
 		var modPath:String = Paths.modFolders('stages/' + stage + '.json');
 		if(FileSystem.exists(modPath)) {
 			rawJson = File.getContent(modPath);
@@ -72,10 +72,15 @@ class StageData {
 			rawJson = File.getContent(path);
 		}
 		#else
+
 		if(Assets.exists(path)) {
 			rawJson = Assets.getText(path);
 		}
 		#end
+
+
+		
+		
 		else
 		{
 			return null;
