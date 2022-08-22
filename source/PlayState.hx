@@ -1625,9 +1625,6 @@ class PlayState extends MusicBeatState
 		doof.cameras = [camHUD];
 		flashSprite.cameras = [camHUD];
 	
-		#if android
-                addAndroidControls();
-                #end
 
 		// if (SONG.song == 'South')
 		// FlxG.camera.alpha = 0.7;
@@ -1992,9 +1989,6 @@ class PlayState extends MusicBeatState
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
 		if(ret != FunkinLua.Function_Stop) {
 			
-			#if android
-                        androidControls.visible = true;
-                        #end
 				
 			generateStaticArrows(0);
 			generateStaticArrows(1);
