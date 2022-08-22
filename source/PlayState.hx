@@ -14,7 +14,6 @@ import flixel.FlxBasic;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.FlxGame;
-
 import flixel.FlxObject;
 import flixel.FlxSprite;
 import flixel.FlxState;
@@ -23,7 +22,6 @@ import flixel.addons.display.FlxGridOverlay;
 import flixel.addons.effects.FlxTrail;
 import flixel.addons.effects.FlxTrailArea;
 import flixel.addons.effects.chainable.FlxEffectSprite;
-
 import flixel.addons.effects.chainable.FlxWaveEffect;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.graphics.atlas.FlxAtlas;
@@ -32,12 +30,9 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.effects.particles.FlxEmitter;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
-
 import flixel.math.FlxRect;
 import flixel.system.FlxSound;
-
-
-import flixel.text.FlxText
+import flixel.text.FlxText;
 import flixel.tweens.FlxEase;
 import flixel.tweens.FlxTween;
 import flixel.ui.FlxBar;
