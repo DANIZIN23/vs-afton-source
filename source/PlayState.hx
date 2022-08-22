@@ -32,7 +32,7 @@ import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.effects.particles.FlxEmitter;
 import flixel.math.FlxMath;
 import flixel.math.FlxPoint;
-AddAndroidControls
+
 import flixel.math.FlxRect;
 import flixel.system.FlxSound;
 
